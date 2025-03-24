@@ -1,23 +1,40 @@
 "use client";
 
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
+import { Tabs, Tab, Box } from "@mui/material";
 import { useState } from "react";
+import "../styles/NavBar.css";
+import CustomTabPanel from "./CustomTabPanel";
 
 export default function NavBar() {
   const [tabValue, setTabValue] = useState(1);
 
-  function handleTabClick(value) {
-    setTabValue(value);
+  function handleTabChange(event, newValue) {
+    setTabValue(newValue);
   }
+
   return (
-    <Tabs value={tabValue}>
-      <Tab label="Jake Whittaker" value={1} onClick={handleTabClick(value)} />
-      <Tab label="About" value={2} onClick={handleTabClick(value)} />
-      <Tab label="Skills" value={3} onClick={handleTabClick(value)} />
-      <Tab label="Projects" value={4} onClick={handleTabClick(value)} />
-      <Tab label="Contact" value={5} onClick={handleTabClick(value)} />
-      <Tab label="Resume" value={6} onClick={handleTabClick(value)} />
-    </Tabs>
+    <main>
+      <div className="navbar">
+        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+          <Tabs value={tabValue} onChange={handleTabChange}>
+            <Tab label="Jake Whittaker" value={0} />
+              <Tab label="About" value={1} />
+              <Tab label="Skills" value={2} />
+              <Tab label="Projects" value={3} />
+              <Tab label="Contact" value={4} />
+              <Tab label="Resume" value={5} />
+          </Tabs>
+        </Box>
+      </div>
+      <CustomTabPanel value={tabValue} index={0}>
+        Item One
+      </CustomTabPanel>
+      <CustomTabPanel value={tabValue} index={1}>
+        Item Two
+      </CustomTabPanel>
+      <CustomTabPanel value={tabValue} index={2}>
+        Item Three
+      </CustomTabPanel>
+    </main>
   );
 }
