@@ -1,0 +1,25 @@
+.skills-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+}
+
+.skills-heading {
+  font-size: 2em;
+  margin: 0;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.skill-list p {
+  margin: 0;
+  background-color: grey;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
