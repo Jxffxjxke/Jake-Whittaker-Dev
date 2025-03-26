@@ -2,7 +2,7 @@ import React from "react";
 
 export const About = () => {
   return (
-    <div>
+    <main className="main">
       <p>Past</p>
       <p>
         Last year, between March and July, I completed the Northcoders
@@ -28,6 +28,6 @@ export const About = () => {
         learning, contribute to meaningful projects, and build software that
         makes a difference. I'm always open to new challenges and opportunities!
       </p>
-    </div>
+    </main>
   );
 };

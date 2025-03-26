@@ -2,7 +2,7 @@ import React from "react";
 
 export const JakeWhittaker = () => {
   return (
-    <div>
+    <main className="main">
       <p>
         Hey there! I'm <strong>Jake Whittaker</strong>.
       </p>
@@ -12,8 +12,10 @@ export const JakeWhittaker = () => {
       </p>
       <p>
         Based near Manchester, I love crafting clean and efficient code to solve
-        real-world problems.
+        real-world problems. Between March-July 2024 I completed the Northcoders
+        FullStack software development bootcamp where I learnt the fundamentals
+        of software development.
       </p>
-    </div>
+    </main>
   );
 };

@@ -3,10 +3,9 @@ import "../styles/Skills.css";
 
 export const Skills = () => {
   return (
-    <div className="skills-container">
-      <p className="skills-heading">Skills</p>
+    <main className="skills-container main">
       <div>
-        <p>Front End</p>
+        <h2>Front End</h2>
         <div className="skill-list">
           <p>JavaScript</p>
           <p>TypeScript</p>
@@ -19,7 +18,7 @@ export const Skills = () => {
         </div>
       </div>
       <div>
-        <p>Back End</p>
+        <h2>Back End</h2>
         <div className="skill-list">
           <p>SQL</p>
           <p>Postgres</p>
@@ -30,7 +29,7 @@ export const Skills = () => {
         </div>
       </div>
       <div>
-        <p>Tools & Platforms</p>
+        <h2>Tools & Platforms</h2>
         <div className="skill-list">
           <p>Render</p>
           <p>Netlify</p>
@@ -38,6 +37,6 @@ export const Skills = () => {
           <p>GitHub Actions</p>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
